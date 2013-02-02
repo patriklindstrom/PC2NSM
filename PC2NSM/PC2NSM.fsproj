@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="Tutorial.fsx" />
     <None Include="PC2NSM.fsx" />
+    <None Include="MapReduce.fsx" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="mscorlib" />

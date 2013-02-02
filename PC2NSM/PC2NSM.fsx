@@ -44,6 +44,18 @@
     let NSMtree:Node list  = [root;vertebrates;invertebrates;mollusks;insects;mantis;mammals;tiger;horse] 
     let showNode n =
         printfn "Name of Node is:%s parent is:%d" n.label n.pc.parentId
+    let maxIndex seq =  
+        seq
+        |> Seq.mapi (fun i x -> i, x)
+        |> Seq.maxBy snd 
+        |> fst 
+    let getLeftEdge n :Node list = 
+         let NSMSubtree:Node list = min(n)     
+    let maxIndex seq =  
+        seq
+        |> Seq.mapi (fun i x -> i, x)
+        |> Seq.maxBy snd 
+        |> fst     
 
     let foo = (1,2,3,4)       
     let rec processItems proc = function
